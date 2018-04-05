@@ -1,0 +1,42 @@
+#Author: your.email@your.domain.com
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#""" (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#<> (placeholder)
+#""
+## (Comments)
+#Sample Feature Definition Template
+Feature: Voicezone
+
+  Scenario Outline: Voicezone                                                                  [90m# Voicezone_features/Sign_In.feature:21[0m
+    [36mGiven [0m[36m<Feature> Get"<Username>" and "<Password>" and "<Exe>" and "<Browser>" and <timelim>[0m
+
+    Examples: 
+
+  Scenario Outline: Voicezone                                                        [90m# Voicezone_features/Sign_In.feature:26[0m
+    [32mGiven [0m[32mNotifybyEmail Get"[0m[32m[1mNCSTest[0m[32m" and "[0m[32m[1mPassword2013[0m[32m" and "[0m[32m[1mNo[0m[32m" and "[0m[32m[1mChrome[0m[32m" and [0m[32m[1m80[0m [90m# NotifybyEmail.notifybyemail_Get_and_and_and_and(String,String,String,String,int)[0m
+
+  Scenario Outline: Voicezone                                                      [90m# Voicezone_features/Sign_In.feature:27[0m
+    [32mGiven [0m[32mVoicetotext Get"[0m[32m[1mNCSTest[0m[32m" and "[0m[32m[1mPassword2013[0m[32m" and "[0m[32m[1mNo[0m[32m" and "[0m[32m[1mChrome[0m[32m" and [0m[32m[1m80[0m [90m# Voicetotext.Voicetotext_Get_and_and_and_and(String,String,String,String,int)[0m
+
+  Scenario Outline: Voicezone                                                  [90m# Voicezone_features/Sign_In.feature:28[0m
+    [32mGiven [0m[32mPinskip Get"[0m[32m[1mNCSTest[0m[32m" and "[0m[32m[1mPassword2013[0m[32m" and "[0m[32m[1mNo[0m[32m" and "[0m[32m[1mChrome[0m[32m" and [0m[32m[1m80[0m [90m# Pinskip.Pinskip_Get_and_and_and_and(String,String,String,String,int)[0m
+
+  Scenario Outline: Voicezone                                                                 [90m# Voicezone_features/Sign_In.feature:29[0m
+    [32mGiven [0m[32mBlock Unwanted Callers Get"[0m[32m[1mNCSTest[0m[32m" and "[0m[32m[1mPassword2013[0m[32m" and "[0m[32m[1mNo[0m[32m" and "[0m[32m[1mChrome[0m[32m" and [0m[32m[1m80[0m [90m# BlockUnwantedCallers.block_Unwanted_Callers_Get_and_and_and_and(String,String,String,String,int)[0m
+
+  Scenario Outline: Voicezone                                                                  [90m# Voicezone_features/Sign_In.feature:30[0m
+    [32mGiven [0m[32mAccept Selected Callers Get"[0m[32m[1mNCSTest[0m[32m" and "[0m[32m[1mPassword2013[0m[32m" and "[0m[32m[1mNo[0m[32m" and "[0m[32m[1mChrome[0m[32m" and [0m[32m[1m80[0m [90m# AcceptSelectedCaller.accept_Selected_Callers_Get_and_and_and_and(String,String,String,String,int)[0m
+
+  Scenario Outline: Voicezone                                                                    [90m# Voicezone_features/Sign_In.feature:31[0m
+    [32mGiven [0m[32mBlock Outbound Caller ID Get"[0m[32m[1mNCSTest[0m[32m" and "[0m[32m[1mPassword2013[0m[32m" and "[0m[32m[1mYes[0m[32m" and "[0m[32m[1mChrome[0m[32m" and [0m[32m[1m80[0m [90m# BlockOutboundCallerID.block_Outbound_Caller_ID_Get_and_and_and_and(String,String,String,String,int)[0m

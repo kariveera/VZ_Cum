@@ -1,0 +1,110 @@
+[
+  {
+    "source": "^Accept Selected Callers Get\"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and (\\d+)$",
+    "steps": [
+      {
+        "name": "Accept Selected Callers Get\"NCSTest\" and \"Password2013\" and \"No\" and \"Chrome\" and 80",
+        "aggregatedDurations": {
+          "average": 0.007816936,
+          "median": 0.007816936
+        },
+        "durations": [
+          {
+            "duration": 0.007816936,
+            "location": "Voicezone_features/Sign_In.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Block Outbound Caller ID Get\"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and (\\d+)$",
+    "steps": [
+      {
+        "name": "Block Outbound Caller ID Get\"NCSTest\" and \"Password2013\" and \"Yes\" and \"Chrome\" and 80",
+        "aggregatedDurations": {
+          "average": 179.625623724,
+          "median": 179.625623724
+        },
+        "durations": [
+          {
+            "duration": 179.625623724,
+            "location": "Voicezone_features/Sign_In.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pinskip Get\"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and (\\d+)$",
+    "steps": [
+      {
+        "name": "Pinskip Get\"NCSTest\" and \"Password2013\" and \"No\" and \"Chrome\" and 80",
+        "aggregatedDurations": {
+          "average": 0.00021322,
+          "median": 0.00021322
+        },
+        "durations": [
+          {
+            "duration": 0.00021322,
+            "location": "Voicezone_features/Sign_In.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^NotifybyEmail Get\"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and (\\d+)$",
+    "steps": [
+      {
+        "name": "NotifybyEmail Get\"NCSTest\" and \"Password2013\" and \"No\" and \"Chrome\" and 80",
+        "aggregatedDurations": {
+          "average": 0.166596753,
+          "median": 0.166596753
+        },
+        "durations": [
+          {
+            "duration": 0.166596753,
+            "location": "Voicezone_features/Sign_In.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Voicetotext Get\"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and (\\d+)$",
+    "steps": [
+      {
+        "name": "Voicetotext Get\"NCSTest\" and \"Password2013\" and \"No\" and \"Chrome\" and 80",
+        "aggregatedDurations": {
+          "average": 0.000262551,
+          "median": 0.000262551
+        },
+        "durations": [
+          {
+            "duration": 0.000262551,
+            "location": "Voicezone_features/Sign_In.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Block Unwanted Callers Get\"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and (\\d+)$",
+    "steps": [
+      {
+        "name": "Block Unwanted Callers Get\"NCSTest\" and \"Password2013\" and \"No\" and \"Chrome\" and 80",
+        "aggregatedDurations": {
+          "average": 0.000230766,
+          "median": 0.000230766
+        },
+        "durations": [
+          {
+            "duration": 0.000230766,
+            "location": "Voicezone_features/Sign_In.feature:22"
+          }
+        ]
+      }
+    ]
+  }
+]
