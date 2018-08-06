@@ -45,7 +45,7 @@ public class ThreeWayCalling extends Commonfiles{
 	            			   }while(driver.findElement(By.xpath("//*[@id='progress']")).isDisplayed());
 	            			 Thread.sleep(20000);
 	            			 index=i;
-	            			 focusClick(driver, driver.findElement(By.xpath("(//a[contains(text(),'(edit)')])[7]")),br);
+	            			 focusClick(driver, driver.findElement(By.xpath("(//a[contains(text(),'(edit)')])[6]")),br);
 	            	                Thread.sleep(5000);
 	            	                status1=false;
 	            	                status = driver.findElement(By.id("threewayActivated")).isSelected();

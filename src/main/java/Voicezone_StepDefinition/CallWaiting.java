@@ -24,7 +24,7 @@ public class CallWaiting extends Commonfiles {
 			    }
 		        
 		     driver=getDriver();
-			 System.out.println("Notify by Email Inprogress");
+			 System.out.println("Execution Inprogress");
 			 int chk=0;
 			    do{
 			         Thread.sleep(1000);       
@@ -34,7 +34,7 @@ public class CallWaiting extends Commonfiles {
 			    while(driver.findElement(By.xpath("//*[@id='progress']")).isDisplayed());
 			 Thread.sleep(20000);
 			 index=i;
-			 focusClick(driver, driver.findElement(By.xpath("(//a[contains(text(),'(edit)')])[5]")),br);
+			 focusClick(driver, driver.findElement(By.xpath("(//a[contains(text(),'(edit)')])[4]")),br);
 		      Thread.sleep(5000);
 					boolean statusdisabled = driver.findElement(By.id("cwdisabled")).isSelected();
 					System.out.println("Disablecallwaiting"+statusdisabled);

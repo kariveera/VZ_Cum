@@ -58,15 +58,15 @@ public class Commonfiles extends TestRunner {
     }
     public static WebDriver getdriver(String browserName) {
     	if(browserName.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\k.y.sadashivappa\\Desktop\\VZ_Cucumber_Sanjay\\Browser_Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","Browser_Drivers\\chromedriver.exe");
 			return new ChromeDriver();
 		}
 		else if(browserName.equals("ie")) {
-			System.setProperty("webdriver.ie.driver","C:\\Users\\k.y.sadashivappa\\Desktop\\VZ_Cucumber_Sanjay\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver","Browser_Drivers\\IEDriverServer.exe");
 			return new InternetExplorerDriver();
 		}
 		else if(browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver","C:\\Users\\k.y.sadashivappa\\Desktop\\VZ_Cucumber_Sanjay\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver","Browser_Drivers\\geckodriver.exe");
 			return new FirefoxDriver();
 		}
 		return null;
@@ -210,7 +210,7 @@ public class Commonfiles extends TestRunner {
 			} catch (Exception e) {
 
 			Date dNow;
-			String imagename = "C:\\Users\\k.y.sadashivappa\\Desktop\\VZ_Cucumber_Sanjay\\output\\Exception";
+			String imagename = "output\\Exception";
 			SimpleDateFormat ft = new SimpleDateFormat("'_'MMMM dd'_'hh.mma");
 			dNow = new Date();
 			imagename = imagename + int_screenshot + ft.format(dNow) + ".png";
@@ -293,7 +293,7 @@ public class Commonfiles extends TestRunner {
         
         try {
       	
-             myFirstWbook = Workbook.createWorkbook(new File("C:\\Users\\k.y.sadashivappa\\Desktop\\VZ_Cucumber_Sanjay\\output\\"+Feature+".xls"));
+             myFirstWbook = Workbook.createWorkbook(new File("output\\"+Feature+".xls"));
              WritableSheet Sheet = myFirstWbook.createSheet("Sheet 1",0);
              
              WritableFont TableFormat = new WritableFont(WritableFont.ARIAL, 10,
@@ -451,7 +451,7 @@ public class Commonfiles extends TestRunner {
             }  */
               Date dNow;String actual = null;
               SimpleDateFormat ft = new SimpleDateFormat("'_'MMMM dd'_'hh.mma");
-              String imagename = "C:\\Users\\k.y.sadashivappa\\Desktop\\VZ_Cucumber_Sanjay\\output\\Fail";
+              String imagename = "output\\Fail";
               Actual[a]=actual;
               if (Result[a].equals("Fail")) {
       			// ||r.equals("refer_screenshot")
@@ -470,7 +470,7 @@ public class Commonfiles extends TestRunner {
       			Actual[a] = actual + " Refer screenshot: "
       					+ imagename;
       		}
-              imagename = "C:\\Users\\k.y.sadashivappa\\Desktop\\VZ_Cucumber_Sanjay\\output\\Pass";
+              imagename = "output\\Pass";
               if (Result[a].equals("Pass")) {
         			// ||r.equals("refer_screenshot")
         			dNow = new Date();

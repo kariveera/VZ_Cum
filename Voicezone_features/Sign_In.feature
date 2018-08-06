@@ -23,13 +23,8 @@ Feature: Voicezone
 
     Examples: 
       | Feature                     | Username | Password     | Exe | Browser | timelim |
-      | NotifybyEmail               | NCSTest  | Password2013 | Yes | Chrome  |      80 |
-      | NotifybyText                | NCSTest  | Password2013 | Yes | Chrome  |      80 |
-      | Voicetotext                 | NCSTest  | Password2013 | Yes | Chrome  |      80 |
-      | Pinskip                     | NCSTest  | Password2013 | Yes | Chrome  |      80 |
-      | Pinchange                   | NCSTest  | Password2013 | Yes | Chrome  |      80 |
       | Block Unwanted Callers      | NCSTest  | Password2013 | Yes | Chrome  |      80 |
-      | CallBlockerBasicPlus        | NCSTest  | Password2013 | Yes | Chrome  |      80 |
+      | NotifybyText                | NCSTest  | Password2013 | Yes | Chrome  |      80 |
       | Accept Selected Callers     | NCSTest  | Password2013 | Yes | Chrome  |      80 |
       | Block Outbound Caller ID    | NCSTest  | Password2013 | Yes | Chrome  |      80 |
       | Nomorobo                    | NCSTest  | Password2013 | Yes | Chrome  |      80 |
@@ -38,7 +33,12 @@ Feature: Voicezone
       | CallForwardingNoAnswer      | NCSTest  | Password2013 | Yes | Chrome  |      80 |
       | CallForwardingUnconditional | NCSTest  | Password2013 | Yes | Chrome  |      80 |
       | SelectiveCallForwarding     | NCSTest  | Password2013 | Yes | Chrome  |      80 |
-      | CallWaiting                 | NCSTest  | Password2013 | Yes | Chrome  |      80 |
       | VIPRing                     | NCSTest  | Password2013 | Yes | Chrome  |      80 |
-      | ThreeWayCalling             | NCSTest  | Password2013 | Yes | Chrome  |      80 |
       | SpeedDial                   | NCSTest  | Password2013 | Yes | Chrome  |      80 |
+      | CallBlockerBasicPlus        | NCSTest  | Password2013 | No  | Chrome  |      80 |
+      | NotifybyEmail               | NCSTest  | Password2013 | No  | Chrome  |      80 |
+      | ThreeWayCalling             | NCSTest  | Password2013 | Yes | Chrome  |      80 |
+      | Voicetotext                 | NCSTest  | Password2013 | No  | Chrome  |      80 |
+      | Pinskip                     | NCSTest  | Password2013 | No  | Chrome  |      80 |
+      | Pinchange                   | NCSTest  | Password2013 | No  | Chrome  |      80 |
+      | CallWaiting                 | NCSTest  | Password2013 | No  | Chrome  |      80 |
