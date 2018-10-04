@@ -58,15 +58,15 @@ public class Commonfiles extends TestRunner {
     }
     public static WebDriver getdriver(String browserName) {
     	if(browserName.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver","Browser_Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 			return new ChromeDriver();
 		}
 		else if(browserName.equals("ie")) {
-			System.setProperty("webdriver.ie.driver","Browser_Drivers\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver","IEDriverServer.exe");
 			return new InternetExplorerDriver();
 		}
 		else if(browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver","Browser_Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver","geckodriver.exe");
 			return new FirefoxDriver();
 		}
 		return null;
